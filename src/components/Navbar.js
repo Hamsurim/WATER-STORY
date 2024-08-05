@@ -1,3 +1,5 @@
+// 네비게이션 바 페이지 
+// 카테고리 페이지라고 생각하심 됩니다 ~~
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
