@@ -10,9 +10,11 @@ import LoginPage from './pages/Login';
 import AskWritePage from './pages/AskWrite';
 import AskPost from './pages/AskPost';
 import AskThread from './pages/AskThread';
+import ShopMap from './pages/Map';
 
 const App = () => {
   return (
+  
     <Router>
       <div>
         <NavigationBar /> {/* 네비게이션 바 컴포넌트 추가 */}
@@ -27,6 +29,9 @@ const App = () => {
           <Route path="/ask" element={<AskThread />} /> {/* 문의하기 게시물 목록 페이지 */}
           <Route path="/ask/write" element={<AskWritePage />} /> {/* 문의하기 글 작성 페이지*/}
           <Route path="/ask/post/:id" element={<AskPost />} />{/* 문의하기 상세 페이지*/}
+       
+          <Route path="/map" element={<ShopMap />} />{/* 지도 상세 페이지*/}
+       
         </Routes>
       </div>
     </Router>
